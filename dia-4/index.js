@@ -10,4 +10,4 @@ if(fome === "não" || dinheiro == "não"){
     alert("Hoje a janta será no seu restaurante favorito!")
 }else{
     alert("Peça um delivery!")
-} 
+}
