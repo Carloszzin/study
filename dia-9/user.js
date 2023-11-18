@@ -20,9 +20,24 @@ if(imc < 18.5 ){
 }
 
 
+//Verifiquei a idade do user no Ano que nasceu, até o ano atual, com sua idade em cada um deles.
+
 let anoAtual = 2023
 let anoNasc = anoAtual - idade
 console.log("Seu ano de Nascimento foi: "+anoNasc)
+
+
+let anoVivo = anoNasc
+let atualIdade = 0
+
+console.log("---------------------------")
+
+for(let anoVivo = anoNasc; anoVivo <= anoAtual; anoVivo++){
+    console.log(anoVivo+ " - "+atualIdade+" anos de idade")
+    atualIdade++;
+}
+
+console.log("---------------------------")
 
 
 //Errei muito nesse. vou resolver por último
@@ -48,4 +63,3 @@ if(idade >= 18){
 }else{
     alert("Você não pode tomar umas geladas ainda...")
 } 
-
