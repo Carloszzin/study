@@ -6,17 +6,17 @@ let altura = parseFloat(prompt("Coloque sua altura:"))
 let profissão = prompt("Qual sua profissão?")
 let imc = peso / (altura * altura)
 
-console.log("Olá! "+nome+", sua idade é: "+idade+" anos, seu peso é: "+peso+"Kg, sua altura: "
-+altura+"cm e sua Profissão é: "+profissão)
+document.body.innerHTML +=`<p>Olá! ${nome}, sua idade é: ${idade} anos, seu peso é: ${peso}Kg, sua altura: 
+${altura} cm e sua Profissão é: ${profissão} </p>`
 
 if(imc < 18.5 ){
-    console.log("Seu IMC foi indicado como: Magreza "+imc.toFixed(2)+"bg/m2")
+    document.body.innerHTML += `Seu IMC foi indicado como: Magreza ${imc.toFixed(2)}bg/m2`
 }else if(imc >= 18.5 && imc <= 24.9){
-    console.log("Seu IMC foi indicado como: Normal "+imc.toFixed(2)+"bg/m2")
+    document.body.innerHTML +=`Seu IMC foi indicado como: Normal ${imc.toFixed(2)} bg/m2`
 }else if(imc >= 24.9 && imc <= 30){
-    console.log("Seu IMC foi indicado como: Sobrepeso "+imc.toFixed(2)+"bg/m2")
+    document.body.innerHTML +=`Seu IMC foi indicado como: Sobrepeso ${imc.toFixed(2)} bg/m2`
 }else{
-    console.log("Seu IMC foi indicado como: Obesidade "+imc.toFixed(2)+"bg/m2")
+    document.body.innerHTML += `Seu IMC foi indicado como: Obesidade ${imc.toFixed(2)} bg/m2`
 }
 
 
